@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纯js实现的仿淘宝注册页面</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        .wrapper {
+            height: 500px;
+            margin: 50px auto;
+            padding-left: 50px;
+        }
+
+        div.item_box {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            display: inline-block;
+            height: 32px;
+            width: 300px;
+        }
+
+        p.error {
+            color: red;
+        }
+
+        p.success {
+            color: green;
+        }
+
+        p.tip {
+            color: goldenrod;
+        }
+
+        .grey {
+            color: darkgrey;
+        }
+
+        em {
+            background-color: darkkhaki;
+            display: inline-block;
+            width: 97px;
+            padding-left:40px;
+        }
+
+        em.activate {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <h2>注册页面</h2>
+    <div class="item_box">
+        <label>用户名：</label>
+        <input>
+        <p></p>
+        <div id="count" class="grey"></div>
+    </div>
+    <div class="item_box">
+        <label>密码：</label>
+        <input type="password">
+        <p></p>
+        <div>
+            <em class="activate">弱</em>
+            <em>中</em>
+            <em>强</em>
+        </div>
+    </div>
+    <div class="item_box">
+        <label>确认密码：</label>
+        <input disabled="" type="password">
+        <p></p>
+    </div>
+    <div class="item_box">
+        <input type="button" value="注册">
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
